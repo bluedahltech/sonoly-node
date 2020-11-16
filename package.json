@@ -11,9 +11,18 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "binaryjs": "^0.2.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "websocket": "^1.0.32",
+    "ws": "^7.4.0"
   },
   "engines": {
     "node": ">=12 <13"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
