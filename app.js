@@ -19,6 +19,13 @@ app.use(
   }),
 );
 
+app.use(
+  cors({
+    origin: 'https://sono.ly',
+    optionsSuccessStatus: 200,
+  }),
+);
+
 wss.on("connection", function(ws){
   ws.on('message', function incoming(data) {
     if(typeof data === 'string'){
